@@ -129,7 +129,9 @@ export default function Hero() {
                     <Button
                         variant="outline"
                         size="lg"
-                        className="gap-2 border-indigo-500 text-indigo-500 hover:bg-indigo-500/10 hover:shadow-[0_0_10px_rgba(99,102,241,0.5)]"
+                        className="gap-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500/10 
+                                  dark:border-indigo-400 dark:text-indigo-300 dark:hover:bg-indigo-400/10 
+                                    hover:shadow-[0_0_10px_rgba(99,102,241,0.5)]"
                     >
                     <GithubIcon className="w-4 h-4" /> GitHub
                     </Button>
@@ -137,9 +139,10 @@ export default function Hero() {
 
                 <Link href="https://linkedin.com/" target="_blank">
                     <Button
-                    variant="outline"
-                    size="lg"
-                    className="gap-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2]/10"
+                        variant="outline"
+                        size="lg"
+                        className="gap-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2]/10
+                                dark:border-[#4C9EFF] dark:text-[#4C9EFF] dark:hover:bg-[#4C9EFF]/10"
                     >
                     <LinkedinIcon className="w-4 h-4 text-[#0A66C2]" /> LinkedIn
                     </Button>

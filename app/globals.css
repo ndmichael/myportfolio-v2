@@ -133,7 +133,8 @@
               radial-gradient(circle at 70% 70%, rgba(59,130,246,0.5), transparent 50%);
   background-size: 200% 200%;
   filter: blur(100px);
-  animation: meshMove 20s linear infinite;
+  transition: background-position 0.2s ease-out;
+  animation: meshMove 25s linear infinite;
 }
 
 @keyframes meshMove {
@@ -146,5 +147,5 @@
 
 .dark .mesh-gradient {
   opacity: 0.4;
-  filter: blur(120px);
+  filter: blur(130px);
 }

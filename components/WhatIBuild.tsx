@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { projects } from "@/data/projects";
+import { works } from "@/data/works";
 import AnimatedMeshGradient from "@/components/AnimatedMeshGradient";
 
 export default function WhatIBuild() {
@@ -33,7 +33,7 @@ export default function WhatIBuild() {
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((p, i) => {
+          {works.map((p, i) => {
             const Icon = p.icon;
             return (
               <motion.div

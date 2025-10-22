@@ -9,6 +9,7 @@ export const projects = [
     mediaType: "image",
     caseStudy: "/case-studies/crypto-prediction",
     link: "https://github.com/ndmichael/crypto-prediction",
+    featured: true,
   },
   {
     title: "PhishGuard",
@@ -20,6 +21,7 @@ export const projects = [
     mediaType: "image",
     caseStudy: "/case-studies/phishguard",
     link: "https://github.com/ndmichael/phishguard",
+    featured: true,
   },
   {
     title: "SchoolPay",
@@ -31,6 +33,8 @@ export const projects = [
     mediaType: "video",
     caseStudy: "/case-studies/schoolpay",
     link: "https://schoolpay-demo.vercel.app",
+    featured: true,
+
   },
   {
     title: "HomeRent",
@@ -42,5 +46,6 @@ export const projects = [
     mediaType: "image",
     caseStudy: "/case-studies/homerent",
     link: "https://github.com/ndmichael/homerent",
+    featured: true,
   },
 ];

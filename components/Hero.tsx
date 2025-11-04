@@ -137,17 +137,17 @@ export default function Hero() {
                     </Button>
                 </Link>
 
-                <Link href="https://linkedin.com/" target="_blank">
-                    <Button
-                        variant="outline"
-                        size="lg"
-                        className="gap-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2]/10
-                                dark:border-[#4C9EFF] dark:text-[#4C9EFF] dark:hover:bg-[#4C9EFF]/10"
-                    >
-                    <LinkedinIcon className="w-4 h-4 text-[#0A66C2]" /> LinkedIn
-                    </Button>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    className="gap-2 rounded-full border border-primary/30 bg-primary/10 text-primary 
+                              hover:bg-primary/20 hover:border-primary/50 transition"
+                  >
+                    <ArrowRight className="w-4 h-4" /> Contact Me
+                  </Button>
                 </Link>
-                </motion.div>
+
+              </motion.div>
             </div>
 
             {/* Floating hint */}

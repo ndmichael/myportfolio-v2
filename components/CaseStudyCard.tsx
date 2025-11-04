@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { PrimaryButton } from "@/components/ButtonGradient";
 
 interface CaseStudyCardProps {
   title: string;
@@ -43,12 +44,11 @@ export default function CaseStudyCard({
         <p className="text-muted-foreground line-clamp-3">{summary}</p>
 
         <div className="mt-4">
-          <Link
-            href={`/case-studies/${slug}`}
-            className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 hover:text-indigo-300 transition-colors"
-          >
-            Read Case Study
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          <Link href={`/case-studies/${slug}`}>
+            <PrimaryButton>
+                Read Case Study
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </PrimaryButton>
           </Link>
         </div>
       </div>

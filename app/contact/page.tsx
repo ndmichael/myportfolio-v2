@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import { PrimaryButton } from "@/components/ButtonGradient";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -102,15 +103,10 @@ export default function ContactPage() {
             ></textarea>
           </div>
 
-          <Button
-            disabled={loading}
-            type="submit"
-            className="w-full py-5 text-base font-semibold rounded-xl
-            bg-gradient-to-r  from-indigo-500 via-purple-500 to-cyan-400 text-white
-            hover:opacity-90 transition"
-          >
+          <PrimaryButton type="submit" fullWidth>
             {loading ? "Opening WhatsApp..." : "Send Message via WhatsApp"}
-          </Button>
+          </PrimaryButton>
+
         </form>
       </motion.div>
     </section>

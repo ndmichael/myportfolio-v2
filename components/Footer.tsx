@@ -8,7 +8,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-14">
+    <footer className="relative">
       {/* Top Gradient Separator Line */}
       <div className="h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 w-full" />
 

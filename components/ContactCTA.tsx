@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { PrimaryButton } from "@/components/ButtonGradient";
 
 export default function ContactCTA() {
   return (
@@ -38,16 +39,17 @@ export default function ContactCTA() {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-4"
         >
-          <Link
-            href="/contact"
-            className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 text-white font-semibold hover:shadow-lg hover:scale-105 transition-transform duration-300"
-          >
-            Contact Me
+
+          <Link href="/contact">
+            <PrimaryButton>
+                Contact Me
+            </PrimaryButton>
           </Link>
+
 
           <Link
             href="/projects"
-            className="px-8 py-3 rounded-full border border-primary/30 text-primary hover:bg-primary/10 transition-colors duration-300 font-medium"
+            className="px-8 py-3 rounded-xl border border-primary/30 text-primary hover:bg-primary/10 transition-colors duration-300 font-medium"
           >
             View My Work
           </Link>

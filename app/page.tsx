@@ -5,6 +5,7 @@ import SelectedProjects from "@/components/SelectedProjects";
 import SkillsSection from "@/components/SkillsSection";
 import Testimonials from "@/components/Testimonials";
 import WhatIBuild from "@/components/WhatIBuild";
+import ContactCTA from "@/components/ContactCTA";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <SkillsSection />    
         <SampleCaseStudy />
         <Testimonials />
+        <ContactCTA />
     </>
   );
 }

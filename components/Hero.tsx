@@ -140,7 +140,7 @@ export default function Hero() {
                 <Link href="/contact">
                   <Button
                     size="lg"
-                    className="gap-2 rounded-full border border-primary/30 bg-primary/10 text-primary 
+                    className="gap-2 rounded-xl border border-primary/30 bg-primary/10 text-primary 
                               hover:bg-primary/20 hover:border-primary/50 transition"
                   >
                     <ArrowRight className="w-4 h-4" /> Contact Me

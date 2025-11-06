@@ -7,10 +7,24 @@ export const projects = [
     color: "#06B6D4",
     media: "/projects/crypto-predict.png",
     mediaType: "image",
-    caseStudy: "/case-studies/crypto-prediction",
+    caseStudy: "/projects/crypto-prediction",
     link: "https://github.com/ndmichael/crypto-prediction",
     featured: true,
   },
+  
+  {
+    title: "DormHub",
+    tagline: "Role-Based Hostel Booking & Room Allocation System",
+    desc: "A full hostel management solution built with Flutter and Firebase. Handles student room bookings, admin assignments, role-based dashboards, and issue reporting — all designed for real-world institutional workflows.",
+    stack: ["Flutter", "Firebase Auth", "Firestore", "Provider"],
+    color: "#F97316",
+    media: "/projects/dormhub.png", // update to correct filename later
+    mediaType: "image",
+    caseStudy: "/projects/dormhub",
+    link: "https://github.com/ndmichael/dormhub", // keep GitHub link even if repo is not yet ready
+    featured: true,
+  },
+
   {
     title: "PhishGuard",
     tagline: "AI-Powered Phishing Detection",
@@ -19,7 +33,7 @@ export const projects = [
     color: "#8B5CF6",
     media: "/projects/phishing.png",
     mediaType: "image",
-    caseStudy: "/case-studies/phishguard",
+    caseStudy: "/projects/phishguard",
     link: "https://github.com/ndmichael/phishguard",
     featured: true,
   },
@@ -31,9 +45,9 @@ export const projects = [
     color: "#0EA5E9",
     media: "/projects/school.mp4",
     mediaType: "video",
-    caseStudy: "/case-studies/schoolpay",
+    caseStudy: "/projects/schoolpay",
     link: "https://schoolpay-demo.vercel.app",
-    featured: true,
+    featured: false,
 
   },
   {
@@ -44,7 +58,7 @@ export const projects = [
     color: "#9333EA",
     media: "/projects/rental.png",
     mediaType: "image",
-    caseStudy: "/case-studies/homerent",
+    caseStudy: "/projects/homerent",
     link: "https://github.com/ndmichael/homerent",
     featured: true,
   },

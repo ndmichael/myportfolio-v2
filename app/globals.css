@@ -149,3 +149,12 @@
   opacity: 0.4;
   filter: blur(130px);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

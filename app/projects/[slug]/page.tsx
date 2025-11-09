@@ -5,6 +5,8 @@ import CaseApproach from "@/components/case-studies/CaseApproach";
 import CaseResults from "@/components/case-studies/CaseResults";
 import CaseStacks from "@/components/case-studies/CaseStacks";
 
+import CaseActions from "@/components/case-studies/CaseActions";
+
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
     
 
@@ -35,8 +37,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <CaseApproach
             approach={data.approach}
             features={data.features}
-            media={data.media.approach}          // ✅ Single image
-            featureMedia={data.media.features}   // ✅ Array
+            media={data.media.approach}          
+            featureMedia={data.media.features}   
             />
 
         <CaseResults 
@@ -44,19 +46,13 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         media={data.media.results}
         />
 
+        
+        <CaseActions github={data.github} live={data.live} />
 
-      <div className="flex gap-4 pt-6">
-        {data.github && (
-          <a href={data.github} target="_blank" className="primary-button">
-            View GitHub
-          </a>
-        )}
-        {data.live && (
-          <a href={data.live} target="_blank" className="primary-button-secondary">
-            View Live Project
-          </a>
-        )}
-      </div>
+
+
+
+    
     </div>
   );
 }

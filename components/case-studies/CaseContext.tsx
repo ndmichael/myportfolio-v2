@@ -41,9 +41,11 @@ export default function CaseContext({ role, overview, context }: CaseContextProp
           Project Overview
         </h3>
 
-        <p className="text-muted-foreground text-base md:text-lg leading-relaxed whitespace-pre-line text-center md:text-left">
-          {overview}
-        </p>
+        {overview.split('\n\n').map((para, i) => (
+          <p key={i} className="text-muted-foreground text-base md:text-lg leading-relaxed text-center md:text-left">
+            {para}
+          </p>
+        ))}
       </motion.div>
 
       {/* Context */}
@@ -58,7 +60,7 @@ export default function CaseContext({ role, overview, context }: CaseContextProp
           Context & Problem
         </h3>
 
-        <p className="text-muted-foreground text-base md:text-lg leading-relaxed whitespace-pre-line text-center md:text-left">
+        <p className="text-muted-foreground text-base md:text-lg leading-relaxed text-center md:text-left">
           {context}
         </p>
       </motion.div>

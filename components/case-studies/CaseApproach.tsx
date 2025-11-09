@@ -15,7 +15,7 @@ export default function CaseApproach({
   featureMedia: string[];
 }) {
   return (
-    <section className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-16 space-y-16">
+    <section className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:px-20 pt-12 space-y-16">
 
       {/* Title */}
       <motion.h2

@@ -23,19 +23,19 @@ export default function CaseActions({ github, live }: CaseActionsProps) {
       >
         <div className="flex flex-wrap gap-4 justify-center">
           {live && (
-            <PrimaryButton href={live}>
-              View Live Project
+            <PrimaryButton href={github}>             
+              View GitHub
             </PrimaryButton>
           )}
 
           {github && (
             <Button 
-              variant="outline" 
+              variant="secondary" 
               size="lg"
               asChild
             >
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                View GitHub
+              <a href={live} target="_blank" rel="noopener noreferrer">
+                View Live Project
               </a>
             </Button>
           )}

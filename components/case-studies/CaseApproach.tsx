@@ -47,7 +47,7 @@ export default function CaseApproach({
             transition={{ duration: 0.5 }}
             className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden rounded-xl border border-white/10 shadow-lg"
           >
-            <Image src={media} alt="approach" fill className="object-cover" />
+            <Image src={media} alt="approach" fill className="object-contain" />
           </motion.div>
         )}
       </div>
@@ -80,7 +80,7 @@ export default function CaseApproach({
                          h-[260px] md:h-[320px] lg:h-[380px] 
                          relative overflow-hidden rounded-xl border border-white/10 shadow-lg"
             >
-              <Image src={src} alt={`Feature ${i}`} fill className="object-cover" />
+              <Image src={src} alt={`Feature ${i}`} fill className="object-cover object-top" />
             </div>
           ))}
         </motion.div>
